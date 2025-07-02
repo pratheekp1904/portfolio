@@ -1,0 +1,110 @@
+{% extends "base.html" %}
+{% block content %}
+<section class="page-section">
+    <h2>About Me</h2>
+    <p style="text-align:justify;">I’m a computer science student with a solid background in Python, DSA, and hands-on experience with AWS cloud engineering and DevOps concepts. I’m passionate about tackling complex problems and believe in learning through practical, project-based work. I enjoy leveraging my coding skills to develop efficient solutions and am always looking for opportunities to expand my knowledge in both software engineering and cloud technologies. I thrive in collaborative, dynamic environments, and I’m excited about opportunities where I can contribute meaningfully to a team while continuing to grow both technically and professionally.</p>
+
+    <h3>Education</h3>
+    <div class="education-section">
+        <div class="edu-card">
+            <h4>Bachelor of Technology in Computer Science</h4>
+            <p>BNM Institute of Technology, Bengaluru</p>
+            <p><strong>Year:</strong> 2022 – 2026</p>
+            <p><strong>CGPA:</strong> 9.26</p>
+        </div>
+        <div class="edu-card">
+            <h4>Pre-University (PCMC)</h4>
+            <p>Sri Adichunchanagiri Independent PU College, Shivamogga</p>
+            <p><strong>Year:</strong> 2020 – 2022</p>
+            <p><strong>Percentage:</strong> 97%</p>
+        </div>
+        <div class="edu-card">
+            <h4>SSLC</h4>
+            <p>Vikasa High School, Shivamogga</p>
+            <p><strong>Year:</strong> 2019 – 2020</p>
+            <p><strong>Percentage:</strong> 98.4%</p>
+        </div>
+    </div>
+
+    <h3>Certifications</h3>
+    <div class="education-section">
+        <div class="project-card">
+            <h3><a href="https://www.linkedin.com/posts/pratheek-p-b60216259_sicabrsribabr2024-bnmit-activity-7245634114219876352-0fBg?utm_source=share&utm_medium=member_desktop&rcm=ACoAAD-R5_gB5U3kiAIwo_CxtGRNKOsnMajUuMI" target="_blank">Samsung Prism Python Course (06/2023 - 12/2023)</a></h4>
+            <p>An intensive 6-month Python course led by Samsung trainers, focused on real-world datasets.</p>
+        </div>
+        <div class="project-card">
+            <h3><a href="https://www.udemy.com/certificate/UC-f69a9265-9b03-4a89-ac91-577cef91e833/" target="_blank">The Complete Python Developer</a></h4>
+            <p>An immersive 31-hour Python course covering everything from fundamentals to advanced concepts, designed for aspiring developers.</p>
+        </div>
+        <div class="project-card">
+            <h3><a href="https://jobs-ta.pwc.com/global/en/pwc-tech-and-transformation-launchpad-program" target="_blank">PwC Tech and Transformation Launchpad Program</a></h4>
+            <p>An 18-week training initiative that equips participants with practical skills in coding, databases, and cloud fundamentals through self-paced learning and live mentorship.</p>
+            <p>5 micro-certifications provided.</p>
+            <ul class="social-links">
+                <h5 style="margin: 5px 5px; padding=5px 8px;"><a href="https://pwc.tekstac.com/blocks/tekbadges/badge.php?id=25065&text=QNUuz" target="_blank">IT Fundamentals</a></h5>
+                <h5 style="margin: 5px 5px; padding=5px 8px;"><a href="https://pwc.tekstac.com/blocks/tekbadges/badge.php?id=27949&text=Eqdlt" target="_blank">RDBMS</a></h5>
+                <h5 style="margin: 5px 5px; padding=5px 8px;"><a href="https://pwc.tekstac.com/blocks/tekbadges/badge.php?id=30755&text=4MCCi" target="_blank">Programming Fundamentals</a></h5>
+                <h5 style="margin: 5px 5px; padding=5px 8px;"><a href="https://pwc.tekstac.com/blocks/tekbadges/badge.php?id=32919&text=tekGm" target="_blank">Devops and Cloud Fundamentals</a></h5>
+                <h5 style="margin: 5px 5px; padding=5px 8px;"><a href="">Responsive Web Designing</a></h5>
+            </ul>
+        </div>
+    </div>
+
+    <h3>Connect with Me</h3>
+    <div class="social-links">
+        <a href="https://www.linkedin.com/in/pratheek-p-b60216259" target="_blank">LinkedIn</a><br>
+        <a href="https://github.com/pratheekp1904" target="_blank">GitHub</a><br>
+        <a href="https://leetcode.com/u/pratheekpganiga" target="_blank">LeetCode</a><br>
+        <a href="https://www.instagram.com/pratheek__p__" target="_blank">Instagram</a><br>
+    </div>
+
+</section>
+
+<style>
+    .social-links {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+        margin-top: 10px;
+    }
+
+    .social-links a {
+        text-decoration: none;
+        padding: 10px 16px;
+        background-color:rgb(139, 133, 133);
+        color: #333;
+        border-radius: 6px;
+        font-weight: bold;
+        transition: background-color 0.3s ease;
+    }
+
+    .social-links a:hover {
+        background-color: #007BFF;
+        color: white;
+    }
+
+    .social-links a {
+        text-decoration: none;
+        color: inherit;  /* Makes the link inherit the h3 color (black) */
+    }
+
+    .social-links a:visited {
+        color: inherit;
+    }
+
+    .project-card:hover {
+        transform: scale(1.05);
+    }
+
+    .project-card h3 a {
+        text-decoration: none;
+        color: inherit;  /* Makes the link inherit the h3 color (black) */
+    }
+
+    .project-card h3 a:visited {
+        color: inherit;
+    }
+
+</style>
+
+{% endblock %}

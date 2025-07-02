@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+{% block content %}
+<section class="hero">
+    <div class="profile-container">
+        <a href="{{ url_for('about') }}">
+            <img src="{{ url_for('static', filename='assets/images/profile.jpg') }}" alt="My Photo" class="profile-pic">
+        </a>
+    </div>
+    <h1 class="fade-in">Pratheek P</h1>
+    <p class="slide-in">Computer Science Engineering student</p>
+    <p class="slide-in">BNM Institute of Technology </p>
+
+</section>
+
+<style>
+    .profile-container {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+        text-align: center;
+    }
+
+    .profile-pic {
+        width: 180px;
+        height: 180px;
+        border-radius: 50%;
+        object-fit: cover;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        transition: transform 0.3s ease;
+    }
+
+    .profile-pic:hover {
+        transform: scale(1.05);
+    }
+</style>
+{% endblock %}

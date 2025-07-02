@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+{% block content %}
+<section class="page-section">
+    <h2 style="color: #c6f35d ">Contact Me</h2>
+    <form action="/contact" method="POST" class="contact-form">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+    </form>
+    <h3 style="color: #b2ec79;">Reach out to me personally</h3>
+    <h5>Email: pratheekpganiga@gmail.com</h3>
+    <h5>Phone: 8660871906</h3>
+    <br><br>
+
+    {% with messages = get_flashed_messages(with_categories=true) %}
+        {% if messages %}
+            {% for category, message in messages %}
+                <div class="flash {{ category }}">{{ message }}</div>
+            {% endfor %}
+        {% endif %}
+    {% endwith %}
+
+<style>
+h5:hover {
+    transform: scale(1.005);
+}
+
+h5 a {
+    text-decoration: none;
+    color: inherit;
+}
+
+h5 a:visited {
+    color: inherit;
+}
+
+</style>
+
+</section>
+{% endblock %}
